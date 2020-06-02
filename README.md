@@ -56,14 +56,14 @@ node xsensDotServer
 ```
 If this error occurs:
 > Error: No compatible USB Bluetooth 4.0 device found!
-1. Find the VID and PID of your Bluetooth device
-<img height="180" src="images/image010.gif"/>
+1. Find the VID and PID of your Bluetooth device<br>
+&nbsp;<img height="180" src="images/image010.gif"/>
 
 2. Open source code: *XsensDOTserver\node_modules\bluetooth-hci-socket\lib\usb.js*
 
 
-3. Add Bluetooth VID & PID in usb.js (line 66)
-<img height="400" src="images/image011.gif"/>
+3. Add Bluetooth VID & PID in usb.js (line 66)<br>
+&nbsp;<img height="400" src="images/image011.gif"/>
 
 
 4. Run Xsens DOT Server again
