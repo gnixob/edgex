@@ -9,12 +9,14 @@ A simple web server that can scan, connect and start measurement with Xsens DOT.
 
 ### Windows
 #### Prerequisites
-#### Install **Node.js** ([node-v12.16.2-x64.msi](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi))
-1. Keep clicking **Next** to complete the installation.
-<img height="300" src="images/image001.gif"/>
+* Windows 10, 64-bit
 
-2. Enter `npm -v` in command prompt to check if the installation is successful.
-<img height="60" src="images/image002.gif"/>
+#### Install **Node.js** ([node-v12.16.2-x64.msi](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi))
+1. Keep clicking **Next** to complete the installation.<br>
+&nbsp;<img height="300" src="images/image001.gif"/>
+
+2. Enter `npm -v` in command prompt to check if the installation is successful. <br>
+&nbsp;<img height="60" src="images/image002.gif"/>
 
 #### Install [node-gyp](https://github.com/nodejs/node-gyp#installation) - Node.js native addon build tool
 ```sh
@@ -30,13 +32,15 @@ npm install --global --production windows-build-tools
 <img height="150" src="images/image005.gif"/>
 
 #### Use [Zadig](https://zadig.akeo.ie/) to setup WinUSB driver
-1. Find Bluetooth adapter inforamtion in Device Manager
-<img height="250" src="images/image006.gif"/>
+1. Find Bluetooth adapter inforamtion in Device Manager <br>
+&nbsp;<img height="250" src="images/image006.gif"/>
 
-1. Download and open Zadig, goto **Options**, enable "**List All Devices**"
 
-1. Find your Bluetooth adapter, change the driver to **WinUSB**. Then click **Replace Driver**
-<img height="200" src="images/image007.gif"/>
+2. Download and open Zadig, goto **Options**, enable "**List All Devices**"
+
+
+3. Find your Bluetooth adapter, change the driver to **WinUSB**. Then click **Replace Driver** <br>
+&nbsp;<img height="200" src="images/image007.gif"/>
 
 Note: please retry several times if the intallation fails. Or try to restart the computer and try again. 
 
@@ -54,9 +58,14 @@ If this error occurs:
 > Error: No compatible USB Bluetooth 4.0 device found!
 1. Find the VID and PID of your Bluetooth device
 <img height="180" src="images/image010.gif"/>
+
 2. Open source code: *XsensDOTserver\node_modules\bluetooth-hci-socket\lib\usb.js*
+
+
 3. Add Bluetooth VID & PID in usb.js (line 66)
 <img height="400" src="images/image011.gif"/>
+
+
 4. Run Xsens DOT Server again
 
 #### Open Xsens DOT server in browser
