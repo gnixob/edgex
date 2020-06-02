@@ -49,6 +49,7 @@ Enter Xsens DOT Server project and install the dependency package
 ```sh
 npm install
 ```
+<img height="500" src="images/image009.gif"/>
 
 #### Run Xsens DOT Server
 ```sh
