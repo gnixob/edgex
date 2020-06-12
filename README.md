@@ -1,5 +1,5 @@
 ## Overview
-Xsens DOT Server is a simple web server that can scan, connect and start measurement with Xsens DOT.
+Xsens DOT Server is a simple web server that can scan, connect and start measurement with Xsens DOT. The system is built using Node.js and programmed in JavaScript. So it's platform independent and we've provided the setup guides Windows, macOS and Raspberry Pi.
 
 ## Documentation
 * [System Architecture](documentation/XsensDOTServer-SystemArchitecture.pdf): system architecture of Xsens DOT Server.
@@ -86,6 +86,8 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
    * Run http://localhost:8080/ and you are able to use Xsens DOT Server!
 
 ## Bug reports and feedback
-Please report all bugs by [rasing an issue](https://github.com/xsens/xsens_dot_server/issues/new)
+Please report all bugs by [rasing an issue](https://github.com/xsens/xsens_dot_server/issues/new).
+
+You can also discuss Xsens DOT related topics in our [Community Forum](https://base.xsens.com/hc/en-us/community/topics).
 
 
