@@ -86,6 +86,8 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
    * Run http://localhost:8080/ and you are able to use Xsens DOT Server!
 
 ## Bug reports and feedback
+All feedback is welcome and helps us to improve!
+
 Please report all bugs by [rasing an issue](https://github.com/xsens/xsens_dot_server/issues/new).
 
 You can also discuss Xsens DOT related topics in our [Community Forum](https://base.xsens.com/hc/en-us/community/topics).
