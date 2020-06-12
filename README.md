@@ -25,6 +25,7 @@ Disconnect all Bluetooth peripherals (mouse, keyboard) before start Xsens DOT Se
 * [macOS](#set-up-on-macos)
 
 ### Set up on Windows
+---
 #### Prerequisites
 * Windows 10, 64-bit
 * Compatible Bluetooth 4.0 USB adapter or above
@@ -61,11 +62,13 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
  4. Run Xsens DOT Server again
  
 ### Set up on macOS
+---
 #### Install following tools
 * Install [node.js 8.11.1](https://nodejs.org/download/release/v8.11.1/)
 
 
 ### Set up on Raspberry Pi
+---
 #### Prerequisites
 * Raspberry Pi 4 Model B 4GB RAM
 * Install [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/)
