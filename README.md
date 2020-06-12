@@ -11,7 +11,7 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 
 ## Setting up the environment
 * [Windows](#set-up-on-windows)
-* [macOS]()
+* [macOS](#set-up-on-macos)
 * [Rasberry Pi](#set-up-on-raspberry-pi)
 
 ### Set up on Windows
@@ -50,13 +50,18 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
 &nbsp;<img height="80" src="images/image012.gif"/>
  4. Run Xsens DOT Server again
  
+### Set up on macOS
+#### Prerequisites
+
+#### Install following tools
+
 
 ### Set up on Raspberry Pi
 #### Prerequisites
 * Raspberry Pi 4 Model B 4GB RAM
 * Install [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/)
 
-#### Install the following tools
+#### Installation steps
 * Install dependcies
   
   ```sh
