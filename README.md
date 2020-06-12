@@ -75,16 +75,17 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
 
 
 ## Run Xsens DOT Server
-* Clone repository
+1. Clone repository
   
-  `git clone https://github.com/xsens/xsens_dot_server.git`
-* Enter Xsens DOT Server project and install the dependency package: `cd ./xsens_dot_server` and then `npm install`
+   `git clone https://github.com/xsens/xsens_dot_server.git`
+1. Enter Xsens DOT Server project and install the dependency package: `cd ./xsens_dot_server` and then `npm install`
+1. Run Xsens DOT Server
+   * Windows: `node xsensDotServer`
+   * Raspberry Pi: `node xsensDotServer`
+1. Open Xsens DOT server in browser
+   * Run http://localhost:8080/ and you are able to use Xsens DOT Server!
 
-* Run Xsens DOT Server
- * Windows: `node xsensDotServer`
- * Raspberry Pi: `node xsensDotServer`
-
-* Open Xsens DOT server in browser
- * Run http://localhost:8080/ and you are able to use Xsens DOT Server!
+## Bug reports and feedback
+Please report all bugs by [rasing an issue](https://github.com/xsens/xsens_dot_server/issues/new)
 
 
