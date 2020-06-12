@@ -50,6 +50,7 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
 &nbsp;<img height="80" src="images/image012.gif"/>
  4. Run Xsens DOT Server again
  
+
 ### Set up on Raspberry Pi
 #### Prerequisites
 * Raspberry Pi 4 Model B 4GB RAM
@@ -70,6 +71,7 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
   > sudo n 8.11.1
   > node -v
   ```
+
 
 ### Run Xsens DOT Server
 * Clone repository
