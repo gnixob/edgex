@@ -59,14 +59,13 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
  3. Add Bluetooth VID & PID in usb.js (line 66)<br>
 &nbsp;<img height="80" src="images/image012.gif"/>
  4. Run Xsens DOT Server again
-<br> 
+
+
 ### Set up on macOS
 #### Install following tools
 * Install [node.js 8.11.1](https://nodejs.org/download/release/v8.11.1/)
 
-<br>
 ### Set up on Raspberry Pi
----
 #### Prerequisites
 * Raspberry Pi 4 Model B 4GB RAM
 * Install [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/)
