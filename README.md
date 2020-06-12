@@ -1,5 +1,15 @@
 ## Overview
-Xsens DOT Server is a simple web server that can scan, connect and start measurement with Xsens DOT. The system is built using Node.js and programmed in JavaScript. So it's platform independent and we've provided the setup guides Windows, macOS and Raspberry Pi.
+Xsens DOT Server is a simple web server that can scan, connect and start measurement with Xsens DOT. The system is built using Node.js in combination with [Noble](https://github.com/abandonware/noble). 
+
+While you can get all measurement modes, 3 modes are supported in current Xsens DOT Server:
+* Complete (Euler)
+* Extended (Quaternion)
+* Rate quantities (with mag)
+
+Get more information about Xsens DOT in [Develepor Page](https://www.xsens.com/developer) and [Base](https://base.xsens.com/hc/en-us/categories/360002285079-Wearable-Sensor-Platform).
+
+## Important Notices
+Disconnect all Bluetooth peripherals (mouse, keyboard) before start Xsens DOT Server to ensure stable Bluetooth connections. 
 
 ## Documentation
 * [System Architecture](documentation/XsensDOTServer-SystemArchitecture.pdf): system architecture of Xsens DOT Server.
@@ -11,8 +21,8 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 
 ## Set up the environment
 * [Windows](#set-up-on-windows)
-* [macOS](#set-up-on-macos)
 * [Rasberry Pi](#set-up-on-raspberry-pi)
+* [macOS](#set-up-on-macos)
 
 ### Set up on Windows
 #### Prerequisites
@@ -51,15 +61,8 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
  4. Run Xsens DOT Server again
  
 ### Set up on macOS
-#### Prerequisites
-brew
-
 #### Install following tools
-* Install node.js
-  
-  `brew install node`
-  
-  `node -v`
+* Install [node.js 8.11.1](https://nodejs.org/download/release/v8.11.1/)
 
 
 ### Set up on Raspberry Pi
@@ -84,7 +87,6 @@ brew
   node -v
   ```
 
-
 ## Run Xsens DOT Server
 1. Clone repository
   
@@ -95,6 +97,9 @@ brew
    * Raspberry Pi: `sudo node xsensDotServer`
 1. Open Xsens DOT server in browser
    * Run http://localhost:8080/ and you are able to use Xsens DOT Server!
+
+## Known issues
+1. Unable to connect sensors in macOS.
 
 ## Bug reports and feedback
 All feedback is welcome and helps us to improve!
