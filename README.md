@@ -17,19 +17,19 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 ### Set up on Windows
 #### Prerequisites
 * Windows 10, 64-bit
-* Compatible Bluetooth 4.0 USB adapter
+* Compatible Bluetooth 4.0 USB adapter or above
 
 #### Install the following tools
-* Install ([Node.js-v12.16.2-x64](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi))
+* [Node.js-v12.16.2-x64](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi))
   * Keep clicking **Next** to complete the installation.
   * Enter `npm -v` in command prompt to check if the installation is successful.<br>
 &nbsp;<img height="60" src="images/image002.gif"/>
 
-* Install [node-gyp](https://github.com/nodejs/node-gyp#installation) - Node.js native addon build tool
+* [node-gyp](https://github.com/nodejs/node-gyp#installation) - Node.js native addon build tool
 ```sh
 npm install -g node-gyp
 ```
-* Install Python 3.8.3 from the [Micfrosoft Store package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package) 
+* Python 3.8.3 from the [Micfrosoft Store package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package) 
 
 * Install all the required tools and configurations using Microsoft's [windows-build-tools](https://github.com/felixrieseberg/windows-build-tools) from an elevated PowerShell or CMD.exe (run as Administrator).
 ```sh
@@ -58,19 +58,13 @@ npm install
 ```sh
 node xsensDotServer
 ```
-If this error occurs:
-> Error: No compatible USB Bluetooth 4.0 device found!
-1. Find the VID and PID of your Bluetooth device<br>
-&nbsp;<img height="180" src="images/image011.gif"/>
-
-2. Open source code: *XsensDOTserver\node_modules\bluetooth-hci-socket\lib\usb.js*
-
-
-3. Add Bluetooth VID & PID in usb.js (line 66)<br>
-&nbsp;<img height="400" src="images/image012.gif"/>
-
-
-4. Run Xsens DOT Server again
+If you encounter `Error: No compatible USB Bluetooth 4.0 device found!`
+ 1. Find the VID and PID of your Bluetooth device<br>
+&nbsp;<img height="300" src="images/image011.gif"/>
+ 2. Open source code: *XsensDOTserver\node_modules\bluetooth-hci-socket\lib\usb.js*
+ 3. Add Bluetooth VID & PID in usb.js (line 66)<br>
+&nbsp;<img height="80" src="images/image012.gif"/>
+ 4. Run Xsens DOT Server again
 
 #### Open Xsens DOT server in browser
-Run http://localhost:8080/ and you should able to use Xsens DOT Server!
+Run http://localhost:8080/ and you are able to use Xsens DOT Server!
