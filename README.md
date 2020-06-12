@@ -9,7 +9,7 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 * [Noble](https://github.com/noble/noble): Node package that implements an interface with the BLE radio (i.e. driver).
 * [Web Client](documentation/XsensDOTServerWebClient.pdf): a web browser that can run on any computer on the local network and that renders an HTML page that implements the GUI.
 
-## Setting up the environment
+## Set up the environment
 * [Windows](#set-up-on-windows)
 * [macOS](#set-up-on-macos)
 * [Rasberry Pi](#set-up-on-raspberry-pi)
@@ -52,8 +52,14 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
  
 ### Set up on macOS
 #### Prerequisites
+brew
 
 #### Install following tools
+* Install node.js
+  
+  `brew install node`
+  
+  `node -v`
 
 
 ### Set up on Raspberry Pi
@@ -83,10 +89,10 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
 1. Clone repository
   
    `git clone https://github.com/xsens/xsens_dot_server.git`
-1. Enter Xsens DOT Server project and install the dependency package: `cd ./xsens_dot_server` and then `npm install`
+1. Enter Xsens DOT Server project `cd ./xsens_dot_server` and install the dependency package `npm install`
 1. Run Xsens DOT Server
    * Windows: `node xsensDotServer`
-   * Raspberry Pi: `node xsensDotServer`
+   * Raspberry Pi: `sudo node xsensDotServer`
 1. Open Xsens DOT server in browser
    * Run http://localhost:8080/ and you are able to use Xsens DOT Server!
 
