@@ -20,7 +20,7 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 * Compatible Bluetooth 4.0 USB adapter or above
 
 #### Install the following tools
-* Install [Node.js-v12.16.2-x64](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi))
+* Install [Node.js-v12.16.2-x64](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi)
   * Keep clicking **Next** to complete the installation.
   * Enter `npm -v` in command prompt to check if the installation is successful.<br>
 &nbsp;<img height="60" src="images/image002.gif"/>
@@ -31,10 +31,9 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 
 * Install Python 3.8.3 from the [Micfrosoft Store package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package) 
 
-* Install all the required tools and configurations using Microsoft's [windows-build-tools](https://github.com/felixrieseberg/windows-build-tools) from an elevated PowerShell or CMD.exe (run as Administrator):
+* Install all the required tools and configurations using Microsoft's [windows-build-tools](https://github.com/felixrieseberg/windows-build-tools) from an elevated PowerShell or CMD.exe (run as Administrator)
 
   `npm install --global --production windows-build-tools`
-  
 * Install [Zadig](https://zadig.akeo.ie/) to setup WinUSB driver:
   * Find Bluetooth adapter inforamtion in Device Manager <br>
 &nbsp;<img height="250" src="images/image006.gif"/>
@@ -43,15 +42,15 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 &nbsp;<img height="200" src="images/image007.gif"/>
 
   * Note: please retry several times if the intallation fails. Or restart the computer and try again. 
-* Clone repository:
+* Clone repository
   
   `git clone https://github.com/xsens/xsens_dot_server.git`
-  
 * Enter Xsens DOT Server project and install the dependency package: `xxxx` and then `npm install`
 
 #### Run Xsens DOT Server
 
 `node xsensDotServer`
+
 If you encounter `Error: No compatible USB Bluetooth 4.0 device found!`
  1. Find the VID and PID of your Bluetooth device<br>
 &nbsp;<img height="300" src="images/image011.gif"/>
