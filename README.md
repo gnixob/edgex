@@ -54,34 +54,37 @@ If you encounter `Error: No compatible USB Bluetooth 4.0 device found!` when try
 ### Set up on Raspberry Pi
 #### Prerequisites
 * Raspberry Pi 4 Model B 4GB RAM
+* Install [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/)
 
 #### Install the following tools
 * Install dependcies
   
   ```sh
-  > sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev
-  > sudo apt-get install build-essential checkinstall libssl-dev
+  sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev
+  sudo apt-get install build-essential checkinstall libssl-dev
   ```
 
 * Install node.js 8.11.1: 
   ```sh
-  > sudo apt-get install npm
-  > sudo npm cache clean -f
-  > sudo npm install -g -n
-  > sudo n 8.11.1
-  > node -v
+  sudo apt-get install npm
+  sudo npm cache clean -f
+  sudo npm install -g -n
+  sudo n 8.11.1
+  node -v
   ```
 
 
-### Run Xsens DOT Server
+## Run Xsens DOT Server
 * Clone repository
   
   `git clone https://github.com/xsens/xsens_dot_server.git`
 * Enter Xsens DOT Server project and install the dependency package: `cd ./xsens_dot_server` and then `npm install`
 
 * Run Xsens DOT Server
+ * Windows: `node xsensDotServer`
+ * Raspberry Pi: `node xsensDotServer`
 
-  `node xsensDotServer`
+* Open Xsens DOT server in browser
+ * Run http://localhost:8080/ and you are able to use Xsens DOT Server!
 
-### Open Xsens DOT server in browser
-Run http://localhost:8080/ and you are able to use Xsens DOT Server!
+
