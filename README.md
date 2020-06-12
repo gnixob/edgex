@@ -9,7 +9,7 @@ Xsens DOT Server is a simple web server that can scan, connect and start measure
 * [Noble](https://github.com/noble/noble): Node package that implements an interface with the BLE radio (i.e. driver).
 * [Web Client](documentation/XsensDOTServerWebClient.pdf): a web browser that can run on any computer on the local network and that renders an HTML page that implements the GUI.
 
-## Installation
+## Setting up the environment
 * [Windows](#windows)
 * macOS
 * Rasberry Pi
@@ -43,7 +43,7 @@ npm install --global --production windows-build-tools
   * Find your Bluetooth adapter, change the driver to **WinUSB**. Then click **Replace Driver** <br>
 &nbsp;<img height="200" src="images/image007.gif"/>
 
-  * Note: please retry several times if the intallation fails. Or try to restart the computer and try again. 
+  * Note: please retry several times if the intallation fails. Or restart the computer and try again. 
 * Clone repository
 ```sh 
 git clone https://github.com/xsens/xsens_dot_server.git
@@ -61,13 +61,13 @@ node xsensDotServer
 If this error occurs:
 > Error: No compatible USB Bluetooth 4.0 device found!
 1. Find the VID and PID of your Bluetooth device<br>
-&nbsp;<img height="180" src="images/image010.gif"/>
+&nbsp;<img height="180" src="images/image011.gif"/>
 
 2. Open source code: *XsensDOTserver\node_modules\bluetooth-hci-socket\lib\usb.js*
 
 
 3. Add Bluetooth VID & PID in usb.js (line 66)<br>
-&nbsp;<img height="400" src="images/image011.gif"/>
+&nbsp;<img height="400" src="images/image012.gif"/>
 
 
 4. Run Xsens DOT Server again
