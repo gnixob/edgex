@@ -1,51 +1,54 @@
-## Xsens DOT Server
-A simple web server that can scan, connect and start measurement with Xsens DOT.
+## Overview
+Xsens DOT Server is a simple web server that can scan, connect and start measurement with Xsens DOT.
 
 ## Documentation
-* [Installation](#installation)
+* [System Architecture](documentation/XsensDOTServer-SystemArchitecture.pdf): system architecture of Xsens DOT Server.
+* [Sensor Server](documentation/XsensDOTServer-SensorServer.pdf): application and workflow control.
+* [BLE Handler](documentation/XsensDOTServer-BLEHandler.pdf): creates an abstraction from the BLE protocol.
+* [Web GUI Handler](documentation/XsensDOTServer-WebGUIHandler.pdf): the web server
+* [Noble](https://github.com/noble/noble): Node package that implements an interface with the BLE radio (i.e. driver).
+* [Web Client](documentation/XsensDOTServerWebClient.pdf): a web browser that can run on any computer on the local network and that renders an HTML page that implements the GUI.
 
 ## Installation
 * [Windows](#windows)
+* macOS
+* Rasberry Pi
 
-### Windows
+### Set up on Windows
 #### Prerequisites
 * Windows 10, 64-bit
+* Compatible Bluetooth 4.0 USB adapter
 
-#### Install **Node.js** ([node-v12.16.2-x64.msi](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi))
-1. Keep clicking **Next** to complete the installation.<br>
-&nbsp;<img height="300" src="images/image001.gif"/>
-
-2. Enter `npm -v` in command prompt to check if the installation is successful. <br>
+#### Install the following tools
+* Install ([Node.js-v12.16.2-x64](https://nodejs.org/download/release/v12.16.2/node-v12.16.2-x64.msi))
+  * Keep clicking **Next** to complete the installation.
+  * Enter `npm -v` in command prompt to check if the installation is successful.<br>
 &nbsp;<img height="60" src="images/image002.gif"/>
 
-#### Install [node-gyp](https://github.com/nodejs/node-gyp#installation) - Node.js native addon build tool
+* Install [node-gyp](https://github.com/nodejs/node-gyp#installation) - Node.js native addon build tool
 ```sh
 npm install -g node-gyp
 ```
-<img height="100" src="images/image003.gif"/>
+* Install Python 3.8.3 from the [Micfrosoft Store package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package) 
 
-#### Install [noble](https://github.com/abandonware/noble) - A Node.js BLE (Bluetooth Low Energy) central module
-Install windows-build-tools from an elevated PowerShell or cmd.exe (**run as Administrator**).
+* Install all the required tools and configurations using Microsoft's [windows-build-tools](https://github.com/felixrieseberg/windows-build-tools) from an elevated PowerShell or CMD.exe (run as Administrator).
 ```sh
 npm install --global --production windows-build-tools
 ```
-<img height="150" src="images/image005.gif"/>
 
-#### Use [Zadig](https://zadig.akeo.ie/) to setup WinUSB driver
-1. Find Bluetooth adapter inforamtion in Device Manager <br>
+* Install [Zadig](https://zadig.akeo.ie/) to setup WinUSB driver
+  * Find Bluetooth adapter inforamtion in Device Manager <br>
 &nbsp;<img height="250" src="images/image006.gif"/>
-
-
-2. Download and open Zadig, goto **Options**, enable "**List All Devices**"
-
-
-3. Find your Bluetooth adapter, change the driver to **WinUSB**. Then click **Replace Driver** <br>
+  * Open Zadig, goto **Options**, enable "**List All Devices**"
+  * Find your Bluetooth adapter, change the driver to **WinUSB**. Then click **Replace Driver** <br>
 &nbsp;<img height="200" src="images/image007.gif"/>
 
-Note: please retry several times if the intallation fails. Or try to restart the computer and try again. 
-
-#### Install dependency package
-Enter Xsens DOT Server project and install the dependency package
+  * Note: please retry several times if the intallation fails. Or try to restart the computer and try again. 
+* Clone repository
+```sh 
+git clone https://github.com/xsens/xsens_dot_server.git
+```
+* Enter Xsens DOT Server project and install the dependency package
 ```sh
 npm install
 ```
